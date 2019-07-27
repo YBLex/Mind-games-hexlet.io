@@ -1,0 +1,23 @@
+{
+  "name": "mind_games_my_project_1",
+  "version": "1.0.0",
+  "description": "hexlet-project",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "YBlex",
+  "license": "ISC",
+  "bin": {
+    "sayWelcome": "./brain-games.js"
+  },
+  "keywords": [
+    "mind-games"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5"
+  }
+}
