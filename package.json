@@ -11,7 +11,7 @@
   "author": "YBlex",
   "license": "ISC",
   "bin": {
-    "sayWelcome": "./brain-games.js"
+    "brain-games": "dist/bin/brain-games.js"
   },
   "keywords": [
     "mind-games"
