@@ -1,8 +1,8 @@
 import readlineSync from 'readline-sync';
 
-export const welcome = () => console.log('Welcome to the Brain Games!');
-export const evenStart = () => console.log('Answer "yes" if number is even otherwise answer "no".');
-
+const greeting = 'Welcome to the Brain Games!';
+export const brainEvenInstruction = () => console.log('Answer "yes" if number is even otherwise answer "no".');
+export const brainCalcInstruction = () => console.log('What is the result of the expression?');
 const isEven = (num) => {
   if (num % 2 === 0) {
     return true;
@@ -10,7 +10,14 @@ const isEven = (num) => {
   return false;
 };
 
+const rounder = (func, round) => {
+  for (let i = 1; i < round; i += 1) {
+    func();
+  }
+};
+
 let userName;
+
 const makeUserName = () => {
   userName = readlineSync.question('May I have your name? ');
 };
@@ -19,15 +26,10 @@ export const sayHello = (name) => {
   console.log(`Hello, ${name}!`);
 };
 
-const generateNumber = () => {
-  const min = 1;
-  const max = 50;
-  const rand = Math.round(min - 0.5 + Math.random() * (max - min + 1));
-  return rand;
-};
+const generateNumber = (max, min) => Math.round(min - 0.5 + Math.random() * (max - min + 1));
 
 export const askQuestion = () => {
-  const number = generateNumber();
+  const number = generateNumber(1, 10);
   console.log(`Question: ${number} `);
   const userAnswer = readlineSync.question('Your answer: ');
   if ((isEven(number) && userAnswer === 'yes')
@@ -43,13 +45,42 @@ export const askQuestion = () => {
   return askQuestion();
 };
 
-export const startGame = () => {
-  welcome();
-  evenStart();
+export const generateExpression = () => {
+  const signs = ['+', '-', '*'];
+  const num1 = generateNumber(1, 50);
+  const num2 = generateNumber(1, 50);
+  const randIndex = Math.floor(Math.random() * signs.length);
+  const randSign = signs[randIndex];
+  const expression = `${num1} ${randSign} ${num2}`;
+  let result;
+  switch (randSign) {
+    case '+':
+      result = num1 + num2;
+      break;
+    case '-':
+      result = num1 - num2;
+      break;
+    case '*':
+      result = num1 * num2;
+      break;
+    default:
+      console.log('Uups, somethig happened');
+  }
+  console.log(`Question: ${expression} `);
+  const userAnswer = readlineSync.question('Your answer: ');
+  if (userAnswer === String(result)) {
+    return console.log('Correct!');
+  }
+  console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${result}'.`);
+  console.log(`Let's try again, ${userName}!`);
+  return generateExpression();
+};
+
+export const runGame = (gameInstuction, gameLogic) => {
+  console.log(greeting);
+  gameInstuction();
   makeUserName();
   sayHello(userName);
-  for (let i = 0; i < 3; i += 1) {
-    askQuestion();
-  }
+  rounder(gameLogic, 3);
   return console.log(`Congratulations, ${userName}!`);
 };
