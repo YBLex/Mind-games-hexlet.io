@@ -11,7 +11,7 @@ const isEven = (num) => {
 };
 
 const rounder = (func, round) => {
-  for (let i = 1; i < round; i += 1) {
+  for (let i = 1; i <= round; i += 1) {
     func();
   }
 };
@@ -47,8 +47,8 @@ export const askQuestion = () => {
 
 export const generateExpression = () => {
   const signs = ['+', '-', '*'];
-  const num1 = generateNumber(1, 50);
-  const num2 = generateNumber(1, 50);
+  const num1 = generateNumber(1, 10);
+  const num2 = generateNumber(1, 10);
   const randIndex = Math.floor(Math.random() * signs.length);
   const randSign = signs[randIndex];
   const expression = `${num1} ${randSign} ${num2}`;
