@@ -20,5 +20,8 @@ brain-calc
 ```
 brain-gcd
 ```
+```
+brain-progression
+```
 
 Over time, I will add other games and command for them!!!
