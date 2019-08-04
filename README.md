@@ -23,5 +23,8 @@ brain-gcd
 ```
 brain-progression
 ```
+```
+brain-prime
+```
 
 Over time, I will add other games and command for them!!!
