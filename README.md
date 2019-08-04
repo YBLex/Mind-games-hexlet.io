@@ -13,27 +13,27 @@ npm link
 to install!
 
 ## Use next commands to start game:
-####"Even" game
+#### "Even" game
 Answer "yes" if number ***is even***. Otherwise answer "no".
 ```
 brain-even
 ```
-####"Calc" game
+#### "Calc" game
 What is the ***result*** of the expression?
 ```
 brain-calc
 ```
-####"GCD" game
+#### "GCD" game
 Find ***the greatest common divisor*** of given numbers.
 ```
 brain-gcd
 ```
-####"Progressin" game
+#### "Progressin" game
 What number is ***missing*** in the progression?
 ```
 brain-progression
 ```
-####"Prime" game
+#### "Prime" game
 Answer "yes" if given number ***is prime***. Otherwise answer "no"
 ```
 brain-prime
