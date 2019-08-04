@@ -5,7 +5,7 @@
 This is a study project from the greatest portal hexlet.io
 
 ## How to install?
-Just go to repo and tipe in your terminal:
+Download repo, go in this repo locally and just tipe in your terminal:
 ```
 npm link
 ```
