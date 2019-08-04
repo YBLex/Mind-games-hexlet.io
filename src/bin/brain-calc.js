@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 // eslint-disable-next-line import/named
-import { runGame, brainCalcInstruction, generateExpression } from '../index';
+import run from '../games/calc';
 
-runGame(brainCalcInstruction, generateExpression);
+run();
