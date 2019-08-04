@@ -17,5 +17,8 @@ brain-even
 ```
 brain-calc
 ```
+```
+brain-gcd
+```
 
 Over time, I will add other games and command for them!!!
