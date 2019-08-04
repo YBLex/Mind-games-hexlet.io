@@ -7,24 +7,34 @@ This is a study project from the greatest portal hexlet.io
 ## How to install?
 Download repo, go in this repo locally and just tipe in your terminal:
 ```
+make publish
 npm link
 ```
+to install!
 
 ## Use next commands to start game:
+####"Even" game
+Answer "yes" if number ***is even***. Otherwise answer "no".
 ```
 brain-even
 ```
+####"Calc" game
+What is the ***result*** of the expression?
 ```
 brain-calc
 ```
+####"GCD" game
+Find ***the greatest common divisor*** of given numbers.
 ```
 brain-gcd
 ```
+####"Progressin" game
+What number is ***missing*** in the progression?
 ```
 brain-progression
 ```
+####"Prime" game
+Answer "yes" if given number ***is prime***. Otherwise answer "no"
 ```
 brain-prime
 ```
-
-Over time, I will add other games and command for them!!!
