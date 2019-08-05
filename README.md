@@ -18,6 +18,7 @@ Answer "yes" if number ***is even***. Otherwise answer "no".
 ```
 brain-even
 ```
+[![asciicast](https://asciinema.org/a/1mZN2nsr48k0jPkzrfCQR6zn1.svg)](https://asciinema.org/a/1mZN2nsr48k0jPkzrfCQR6zn1)
 #### "Calc" game
 What is the ***result*** of the expression?
 ```
