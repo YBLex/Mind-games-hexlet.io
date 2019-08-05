@@ -9,10 +9,7 @@ const gameData = () => {
   const question = random(1, 10);
   const answer = isEven(question) ? 'yes' : 'no';
 
-  return {
-    question,
-    answer,
-  };
+  return { question, answer };
 };
 
 export default () => run(rules, gameData);

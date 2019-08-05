@@ -16,10 +16,7 @@ const gameData = () => {
   const num2 = random(1, 50);
   const question = `${num1} ${num2}`;
   const answer = String(findDivisor(num1, num2));
-  return {
-    question,
-    answer,
-  };
+  return { question, answer };
 };
 
 export default () => run(rules, gameData);

@@ -13,10 +13,7 @@ const gameData = () => {
   const num2 = random(1, 10);
 
   const { question, answer } = operations[random(0, operations.length - 1)](num1, num2);
-  return {
-    question,
-    answer,
-  };
+  return { question, answer };
 };
 
 export default () => run(rules, gameData);

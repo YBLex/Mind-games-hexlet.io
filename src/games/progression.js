@@ -23,10 +23,7 @@ const gameData = () => {
     return arr.join(' ');
   })();
 
-  return {
-    question,
-    answer,
-  };
+  return { question, answer };
 };
 
 export default () => run(rules, gameData);
