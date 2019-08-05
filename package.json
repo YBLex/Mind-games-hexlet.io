@@ -2,7 +2,6 @@
   "name": "mind_games_my_project_1",
   "version": "1.0.0",
   "description": "hexlet-project frontend level 1",
-  "main": "index.js",
   "scripts": {
     "test": "test",
     "build": "NODE_ENV=production babel src --out-dir dist",
