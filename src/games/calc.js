@@ -1,4 +1,4 @@
-import run from '../index';
+import run from '..';
 import random from '../utilities';
 
 const rules = 'What is the result of the expression?';

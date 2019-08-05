@@ -1,4 +1,4 @@
-import run from '../index';
+import run from '..';
 import random from '../utilities';
 
 const rules = 'What number is missing in the progression?';
