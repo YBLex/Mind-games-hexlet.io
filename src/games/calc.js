@@ -3,17 +3,16 @@ import random from '../utilities';
 
 const rules = 'What is the result of the expression?';
 
+const operations = [
+  (x, y) => ({ answer: String(x - y), question: `${x} - ${y}` }),
+  (x, y) => ({ answer: String(x + y), question: `${x} + ${y}` }),
+  (x, y) => ({ answer: String(x * y), question: `${x} * ${y}` }),
+];
 const gameData = () => {
   const num1 = random(1, 10);
   const num2 = random(1, 10);
-  const elements = [
-    (x, y) => ({ answer: String(x - y), question: `${x} - ${y}` }),
-    (x, y) => ({ answer: String(x + y), question: `${x} + ${y}` }),
-    (x, y) => ({ answer: String(x * y), question: `${x} * ${y}` }),
-  ];
 
-  const data = elements[random(0, elements.length - 1)](num1, num2);
-  const { question, answer } = data;
+  const { question, answer } = operations[random(0, operations.length - 1)](num1, num2);
   return {
     question,
     answer,
