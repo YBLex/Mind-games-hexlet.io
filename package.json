@@ -1,7 +1,7 @@
 {
   "name": "mind_games_my_project_1",
   "version": "1.0.0",
-  "description": "hexlet-project",
+  "description": "hexlet-project frontend level 1",
   "main": "index.js",
   "scripts": {
     "test": "test",
@@ -19,7 +19,14 @@
     "brain-prime": "dist/bin/brain-prime.js"
   },
   "keywords": [
-    "mind-games"
+    "hexlet",
+    "mind-games",
+    "brain-games",
+    "brain-even",
+    "brain-calc",
+    "brain-gcd",
+    "brain-progression",
+    "brain-prime"
   ],
   "devDependencies": {
     "@babel/cli": "^7.5.5",
