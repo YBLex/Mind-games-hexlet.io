@@ -1,7 +1,7 @@
 import run from '..';
 import random from '../utilities';
 
-const rules = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
 
 const operations = [
   (x, y) => ({ answer: String(x - y), question: `${x} - ${y}` }),
@@ -16,4 +16,4 @@ const gameData = () => {
   return { question, answer };
 };
 
-export default () => run(rules, gameData);
+export default () => run(description, gameData);

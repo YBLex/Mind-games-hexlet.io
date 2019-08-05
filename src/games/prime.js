@@ -1,7 +1,7 @@
 import run from '..';
 import random from '../utilities';
 
-const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 // Algotithm for finding if a number is prime with a sub-linear O(n) time
 const isPrime = (num) => {
   if (num <= 1) return true;
@@ -24,4 +24,4 @@ const gameData = () => {
   return { question, answer };
 };
 
-export default () => run(rules, gameData);
+export default () => run(description, gameData);

@@ -1,7 +1,7 @@
 import run from '..';
 import random from '../utilities';
 
-const rules = 'Answer "yes" if number is even otherwise answer "no".\n';
+const description = 'Answer "yes" if number is even. Otherwise answer "no".';
 
 const isEven = num => num % 2 === 0;
 
@@ -12,4 +12,4 @@ const gameData = () => {
   return { question, answer };
 };
 
-export default () => run(rules, gameData);
+export default () => run(description, gameData);
