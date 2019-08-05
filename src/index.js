@@ -7,16 +7,16 @@ const runGame = (rules, gameData) => {
   console.log(rules);
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!\n`);
-
   for (let i = 0; i < roundsNumber; i += 1) {
     const data = gameData();
-    console.log(`Question: ${data.question}?`);
+    const [gameQuestion, expectedAnswer] = [data.question, data.answer];
+    console.log(`Question: ${gameQuestion}?`);
     const usersAnswer = readlineSync.question('Your answer: ');
 
-    if (data.answer === usersAnswer) {
+    if (expectedAnswer === usersAnswer) {
       console.log('Correct!\n');
     } else {
-      console.log(`'${usersAnswer}' is wrong answer ;(. Correct answer was '${data.answer}'`);
+      console.log(`'${usersAnswer}' is wrong answer ;(. Correct answer was '${expectedAnswer}'`);
       return;
     }
   }
