@@ -12,30 +12,40 @@ npm link
 ```
 to install!
 
+[![asciicast](https://asciinema.org/a/1mZN2nsr48k0jPkzrfCQR6zn1.svg)](https://asciinema.org/a/1mZN2nsr48k0jPkzrfCQR6zn1)
+
 ## Use next commands to start game:
 #### "Even" game
 Answer "yes" if number ***is even***. Otherwise answer "no".
 ```
 brain-even
 ```
-[![asciicast](https://asciinema.org/a/1mZN2nsr48k0jPkzrfCQR6zn1.svg)](https://asciinema.org/a/1mZN2nsr48k0jPkzrfCQR6zn1)
+[![asciicast](https://asciinema.org/a/rnK64Pgm50sParM3LLOgSiy8l.svg)](https://asciinema.org/a/rnK64Pgm50sParM3LLOgSiy8l)
+
 #### "Calc" game
 What is the ***result*** of the expression?
 ```
 brain-calc
 ```
+[![asciicast](https://asciinema.org/a/TeybrnhfZplkzbFSSqrc1khiV.svg)](https://asciinema.org/a/TeybrnhfZplkzbFSSqrc1khiV)
+
 #### "GCD" game
 Find ***the greatest common divisor*** of given numbers.
 ```
 brain-gcd
 ```
+[![asciicast](https://asciinema.org/a/Bqu7SA3kX5kAoYvzRZpZp5hdH.svg)](https://asciinema.org/a/Bqu7SA3kX5kAoYvzRZpZp5hdH)
+
 #### "Progressin" game
 What number is ***missing*** in the progression?
 ```
 brain-progression
 ```
+[![asciicast](https://asciinema.org/a/GVpKRblGOFciYVdJKUhysJsir.svg)](https://asciinema.org/a/GVpKRblGOFciYVdJKUhysJsir)
+
 #### "Prime" game
 Answer "yes" if given number ***is prime***. Otherwise answer "no"
 ```
 brain-prime
 ```
+[![asciicast](https://asciinema.org/a/QZocyziLFx1zd85Ciyh4yXl7G.svg)](https://asciinema.org/a/QZocyziLFx1zd85Ciyh4yXl7G)
