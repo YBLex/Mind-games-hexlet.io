@@ -2,21 +2,22 @@ import run from '..';
 import random from '../utilities';
 
 const description = 'What number is missing in the progression?';
-const progressionLength = 10;
-const generateProgression = () => {
+
+const generateProgression = (firstElement, step, length) => {
   const result = [];
-  let firstElem = random(1, 20);
-  const step = random(1, 7);
-  for (let i = 0; i < progressionLength; i += 1) {
-    result.push(firstElem);
-    firstElem += step;
+  let currentElement = firstElement;
+  for (let i = 0; i < length; i += 1) {
+    currentElement = firstElement + step * i;
+    result.push(currentElement);
   }
   return result;
 };
 
+const firstProgressionElement = random(1, 20);
+const progressionStep = random(1, 7);
 const gameData = () => {
-  const arr = generateProgression();
-  const progressinIndex = random(0, progressionLength);
+  const arr = generateProgression(firstProgressionElement, progressionStep, 10);
+  const progressinIndex = random(0, 10);
   const answer = String(arr[progressinIndex]);
   arr[progressinIndex] = '..';
   const question = arr.join(' ');
