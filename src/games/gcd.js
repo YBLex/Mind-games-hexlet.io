@@ -3,13 +3,7 @@ import random from '../utilities';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
-const findDivisor = (a, b) => {
-  if (!b) {
-    return a;
-  }
-
-  return findDivisor(b, a % b);
-};
+const findDivisor = (a, b) => (!b ? a : findDivisor(b, a % b));
 
 const gameData = () => {
   const num1 = random(1, 50);
