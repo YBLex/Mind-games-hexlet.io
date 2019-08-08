@@ -2,7 +2,7 @@ import run from '..';
 import random from '../utilities';
 
 const description = 'What number is missing in the progression?';
-const progressionLength = random(5, 10);
+const progressionLength = 10;
 const generateProgression = () => {
   const result = [];
   let firstElem = random(1, 20);
