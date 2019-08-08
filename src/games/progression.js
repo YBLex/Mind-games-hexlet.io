@@ -16,9 +16,9 @@ const generateProgression = () => {
 
 const gameData = () => {
   const arr = generateProgression();
-  const index = random(0, progressionLength);
-  const answer = String(arr[index]);
-  arr[index] = '..';
+  const progressinIndex = random(0, progressionLength);
+  const answer = String(arr[progressinIndex]);
+  arr[progressinIndex] = '..';
   const question = arr.join(' ');
 
   return { question, answer };
