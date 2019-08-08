@@ -18,10 +18,8 @@ const gameData = () => {
   const arr = generateProgression();
   const index = random(0, progressionLength);
   const answer = String(arr[index]);
-  const question = (() => {
-    arr[index] = '..';
-    return arr.join(' ');
-  })();
+  arr[index] = '..';
+  const question = arr.join(' ');
 
   return { question, answer };
 };
