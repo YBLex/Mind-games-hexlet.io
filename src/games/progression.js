@@ -5,9 +5,8 @@ const description = 'What number is missing in the progression?';
 
 const generateProgression = (firstElement, step, length) => {
   const result = [];
-  let currentElement = firstElement;
   for (let i = 0; i < length; i += 1) {
-    currentElement = firstElement + step * i;
+    const currentElement = firstElement + step * i;
     result.push(currentElement);
   }
   return result;
@@ -16,11 +15,11 @@ const generateProgression = (firstElement, step, length) => {
 const firstProgressionElement = random(1, 20);
 const progressionStep = random(1, 7);
 const gameData = () => {
-  const arr = generateProgression(firstProgressionElement, progressionStep, 10);
-  const progressinIndex = random(0, 10);
-  const answer = String(arr[progressinIndex]);
-  arr[progressinIndex] = '..';
-  const question = arr.join(' ');
+  const progressoin = generateProgression(firstProgressionElement, progressionStep, 10);
+  const hiddenElementIndex = random(0, 10);
+  const answer = String(progressoin[hiddenElementIndex]);
+  progressoin[hiddenElementIndex] = '..';
+  const question = progressoin.join(' ');
 
   return { question, answer };
 };
