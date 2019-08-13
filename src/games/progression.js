@@ -12,10 +12,10 @@ const generateProgression = (firstElement, step, length) => {
   return result;
 };
 
+const progressionLength = 10;
 const gameData = () => {
   const firstProgressionElement = random(1, 20);
   const progressionStep = random(1, 7);
-  const progressionLength = 10;
   const progressoin = generateProgression(firstProgressionElement, progressionStep,
     progressionLength);
   const hiddenElementIndex = random(0, progressionLength);
