@@ -8,7 +8,7 @@ const runGame = (description, gameData) => {
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!\n`);
   for (let i = 0; i < roundsNumber; i += 1) {
-    const { gameQuestion, expectedAnswer } = gameData();
+    const { question: gameQuestion, answer: expectedAnswer } = gameData();
     console.log(`Question: ${gameQuestion}?`);
     const usersAnswer = readlineSync.question('Your answer: ');
 
