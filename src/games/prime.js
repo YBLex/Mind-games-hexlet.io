@@ -2,17 +2,13 @@ import run from '..';
 import random from '../utilities';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-// Algotithm for finding if a number is prime with a sub-linear O(n) time
-const isPrime = (num) => {
+const isPrime = (num, index = 5) => {
   if (num < 2) return false;
   if (num <= 3) return true;
   if (num % 2 === 0 || num % 3 === 0) return false;
-  let i = 5;
-  while (i * i <= num) {
-    if (num % i === 0 || num % (i + 2) === 0) {
-      return false;
-    }
-    i += 6;
+  if (num % index === 0 || num % (index + 2) === 0) {
+    const newIndex = index + 6;
+    isPrime(num, newIndex);
   }
   return true;
 };
